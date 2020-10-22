@@ -1,0 +1,5 @@
+To run test:
+============
+cd leetcode_python
+export PYTHONPATH=src
+pytest -v tests
