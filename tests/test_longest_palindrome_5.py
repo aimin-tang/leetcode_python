@@ -1,22 +1,19 @@
 from longest_palindrome_5 import Solution
 
 
-def test_is_palindrom():
-    r = Solution().is_palindrome('')
-    assert r == True
-    r = Solution().is_palindrome('aba')
-    assert r == True
-    r = Solution().is_palindrome('abc')
-    assert r == False
+def test_odd_palindrome_centered_at_case1():
+    r = Solution().odd_palindrome_centered_at('abcbe', 2)
+    assert r == 'bcb'
 
 
-def test_longest_from():
-    r = Solution().longest_from('babad', 0)
-    assert r == 'bab'
-    r = Solution().longest_from('babad', 1)
-    assert r == 'aba'
-    r = Solution().longest_from('babad', 2)
+def test_odd_palindrome_centered_at_case2():
+    r = Solution().odd_palindrome_centered_at('abcbe', 1)
     assert r == 'b'
+
+
+def test_even_palindrome_centered_at_case2():
+    r = Solution().even_palindrome_centered_at('bb', 0)
+    assert r == 'bb'
 
 
 def test_with_ex1():
@@ -37,3 +34,7 @@ def test_with_ex3():
 def test_with_ex4():
     r = Solution().longestPalindrome('ac')
     assert r in ['a', 'c']
+
+def test_with_bb():
+    r = Solution().longestPalindrome('bb')
+    assert r == 'bb'
