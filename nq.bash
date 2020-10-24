@@ -1,4 +1,6 @@
 echo "Usage bash nq.bash two_sum 1"
+mv src/*.py src/solved/.
+mv tests/*.py tests/solved/.
 echo "Starting $1 $2"
 touch src/$1_$2.py
 echo $'class Solution:' > src/$1_$2.py
