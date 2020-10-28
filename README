@@ -1,13 +1,32 @@
-========
-Content:
-========
-My own attempts on solving leetcode easy/medium problems.
-Coding is done in Python.
-Test-Driven Development with pytest, for steady progress, and quick refactoring work.
+=============
+This project:
+=============
+My own attempt on solving leetcode easy and medium problems, to practice my Python skills.
 
-============
-To run test:
-============
+For all problems, TDD is used with pytest. This is for steady progress, and quick verification on refactoring work.
+
+=================
+Where things are:
+=================
+Problem in progress always has two files, one in src/, one in tests/.
+
+For example, when I was working on #15, 3Sum:
+
+./solved/src:
+< problems solved before >
+
+./solved/tests:
+< problems solved before >
+
+./src:
+three_sum_15.py   <= source file for current problem
+
+./tests:
+test_three_sum_15.py    <= test file for current problem
+
+=================================
+To run test (on solved problems):
+=================================
 ```
 git clone <repo>
 cd leetcode_python

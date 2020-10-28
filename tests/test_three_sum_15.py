@@ -3,7 +3,7 @@ from three_sum_15 import Solution
 
 def test_find_the_other_two():
     nums = [-5, -2, -1, 6, 7]
-    r = Solution().find_the_other_two(nums, 0, [])
+    r = Solution().find_the_other_two(nums, 0)
     assert r == [(-5, -2, 7), (-5, -1, 6)]
 
 def test_threeSum_ex1():
