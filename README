@@ -1,5 +1,18 @@
+========
+Content:
+========
+My own attempts on solving leetcode easy/medium problems.
+Coding is done in Python.
+Test-Driven Development with pytest, for steady progress, and quick refactoring work.
+
+============
 To run test:
 ============
+```
+git clone <repo>
 cd leetcode_python
-export PYTHONPATH=src
-pytest -v tests
+pipenv shell --python 3.10-dev
+pipenv install
+export PYTHONPATH=solved/src
+pytest -v solved/tests
+```
